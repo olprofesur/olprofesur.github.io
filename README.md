@@ -1,2 +1,2 @@
 # landpage
-olprofesur's inimal &amp; minimalist homepage
+olprofesur's minimal &amp; minimalist homepage
