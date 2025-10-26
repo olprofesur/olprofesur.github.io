@@ -184,19 +184,9 @@ code,pre,kbd,samp{ font-family: var(--wp--preset--font-family--system-font, ui-m
     document.getElementById("lang-en").addEventListener("click", function(){ applyLang("en"); });
 
     // --- Email obfuscation ---
-    /* HOW TO SET:
-       1) Replace the hex string below with your encoded email.
-          Example in JS: Array.from("olprofesur@gmail.com").map(c=>c.charCodeAt(0).toString(16)).join("")
-       2) (Optional) change the subject.
-    */
-    var HEX_EMAIL = ""; // <-- put your hex here, e.g. "636f6e74616374406f6c70726f66657375722e6974"
+    var HEX_EMAIL = "6F6C70726F666573757240676D61696C2E636F6D"; // <-- put your hex here, e.g. "636f6e74616374406f6c70726f66657375722e6974"
     var SUBJECT = "Hello from olprofesur site";
     document.getElementById("email-btn").addEventListener("click", function(){
-      if(!HEX_EMAIL){
-        alert("Set your obfuscated email in HEX_EMAIL inside the HTML (see comment). For now, contact me on LinkedIn.");
-        window.open("https://www.linkedin.com/in/diegobernini", "_blank");
-        return;
-      }
       var email = "";
       for (var i=0; i<HEX_EMAIL.length; i+=2){
         email += String.fromCharCode(parseInt(HEX_EMAIL.substr(i,2),16));
