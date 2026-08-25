@@ -45,16 +45,17 @@ code,pre,kbd,samp{ font-family: var(--wp--preset--font-family--system-font, ui-m
       <a href="#about"><code data-i18n="nav.about">About</code></a>
       <a href="#services"><code data-i18n="nav.services">Services</code></a>
       <a href="#projects"><code data-i18n="nav.projects">Projects</code></a>
+      <a href="/mentors.html"><code data-i18n="nav.mentors">Mentors</code></a>
       <a href="#contact"><code data-i18n="nav.contact">Contact</code></a>
-      <button id="lang-it" aria-label="Italiano"><code>IT</code></button>
-      <button id="lang-en" aria-label="English"><code>EN</code></button>
+      <button id="lang-it" aria-label="Italiano"><code>--lang=it</code></button>
+      <button id="lang-en" aria-label="English"><code>--lang=en</code></button>
       <button id="email-btn" class="small" title="Email" aria-label="Email"><code data-i18n="cta.email">Email</code></button>
     </div>
   </div>
 
   <header id="home" class="hero">
     <h1><code>./olprofesur</code></h1>
-    <p><code data-i18n="hero.subtitle">ENTHUSIASTIC TEACHER OF INFORMATICS · BERGAMO, IT</code></p>
+    <p><code data-i18n="hero.subtitle">INFORMATICS TEACHER & CONSULTANT, BERGAMO, IT</code></p>
     <p><a class="cta" href="https://www.linkedin.com/in/diegobernini" target="_blank" rel="noopener"><code data-i18n="cta.linkedin">→ Connect on LinkedIn</code></a></p>
   </header>
 
@@ -68,8 +69,8 @@ code,pre,kbd,samp{ font-family: var(--wp--preset--font-family--system-font, ui-m
       <h2><code data-i18n="services.title">What I do</code></h2>
       <div class="grid">
         <div class="card">
-          <h3><code data-i18n="services.training.title">🎓 ICT Training & Curriculum Design</code></h3>
-          <p><code data-i18n="services.training.body">AI, Web, IoT, Software Architecture. Laboratori hands-on e materiali didattici.</code></p>
+          <h3><code data-i18n="services.training.title">🎓 Formazione, Progettazione e Coordinamento corsi post diploma ad alto valore aggiunto</code></h3>
+          <p><code data-i18n="services.training.body">AI, IoT, Software Engineering. Solida impostazione tecnica di base. Stretta connessione con i bisogni aziendali.</code></p>
         </div>
         <div class="card">
           <h3><code data-i18n="services.recruiting.title">💼 Technical Scouting</code></h3>
@@ -83,19 +84,10 @@ code,pre,kbd,samp{ font-family: var(--wp--preset--font-family--system-font, ui-m
     </section>
 
     <section class="section" id="projects">
-      <h2><code data-i18n="projects.title">Featured Projects</code></h2>
-      <div class="grid">
-        <div class="card">
-          <h3><code data-i18n="projects.socket.title">Socket Server (C#)</code></h3>
-          <p><code data-i18n="projects.socket.body">Esercitazione didattica TCP socket con comandi JSON e container Docker.</code></p>
-          <p><a class="cta" href="https://github.com/olprofesur/csharp-socket-basics" target="_blank" rel="noopener"><code data-i18n="cta.github">GitHub</code></a></p>
-        </div>
-        <div class="card">
-          <h3><code data-i18n="projects.rest.title">REST Client Samples</code></h3>
-          <p><code data-i18n="projects.rest.body">Esempi C# e JS per CRUD su JSONPlaceholder, con slide e materiali.</code></p>
-          <p><a class="cta" href="https://github.com/olprofesur" target="_blank" rel="noopener"><code data-i18n="cta.repo">Repository</code></a></p>
-        </div>
-      </div>
+      <h2><code data-i18n="projects.title">$ ls ./lab</code></h2>
+      <p><code data-i18n="projects.body1">→ materiale didattico ed esercitazioni, aggiornato di continuo</code></p>
+      <p><code data-i18n="projects.body2">→ socket, REST API, container: esempi di quello che uso in aula</code></p>
+      <p><a class="cta" href="https://github.com/olprofesur" target="_blank" rel="noopener"><code data-i18n="cta.github">Vedi il codice su GitHub →</code></a></p>
     </section>
 
     <section class="section" id="contact">
@@ -116,45 +108,41 @@ code,pre,kbd,samp{ font-family: var(--wp--preset--font-family--system-font, ui-m
     // --- Translations ---
     const t = {
       en: {
-        "nav.about":"About","nav.services":"Services","nav.projects":"Projects","nav.contact":"Contact",
-        "hero.subtitle":"ENTHUSIASTIC TEACHER OF INFORMATICS · BERGAMO, IT",
-        "cta.linkedin":"→ Connect on LinkedIn","cta.linkedin.short":"LinkedIn","cta.github":"GitHub","cta.repo":"Repository","cta.email":"Email",
+        "nav.about":"About","nav.services":"Services","nav.projects":"Projects","nav.mentors":"Mentors","nav.contact":"Contact",
+        "hero.subtitle":"INFORMATICS TEACHER & CONSULTANT, BERGAMO, IT",
+        "cta.linkedin":"→ Connect on LinkedIn","cta.linkedin.short":"LinkedIn","cta.github":"See the code on GitHub →","cta.email":"Email",
         "about.title":"About",
         "about.body":"Informatics teacher and consultant. I design training bridging school and industry, mentor teachers & developers, technical scouting.",
         "services.title":"What I do",
-        "services.training.title":"🎓 ICT Training & Curriculum Design",
-        "services.training.body":"AI, Web, IoT, Software Architecture. Hands-on labs and didactic materials.",
+        "services.training.title":"🎓 Training, Design & Coordination of High-Value Post-Diploma Courses",
+        "services.training.body":"AI, IoT, Software Engineering. Solid technical foundations. Close alignment with business needs.",
         "services.recruiting.title":"💼 Technical Scouting",
-        "services.recruiting.body":"Talent scouting for IT companies: job profiles, technical tests, focused shortlists.",
+        "services.recruiting.body":"Talent scouting: job profiles, technical tests, focused shortlists.",
         "services.mentoring.title":"🧭 Mentoring",
         "services.mentoring.body":"Support for teachers and students: learning paths, projects, job placement.",
-        "projects.title":"Featured Projects",
-        "projects.socket.title":"Socket Server (C#)",
-        "projects.socket.body":"Educational TCP socket exercise with JSON commands and Docker container.",
-        "projects.rest.title":"REST Client Samples",
-        "projects.rest.body":"C# and JS examples for CRUD on JSONPlaceholder, with slides and materials.",
+        "projects.title":"$ ls ./lab",
+        "projects.body1":"→ teaching materials and exercises, updated continuously",
+        "projects.body2":"→ sockets, REST APIs, containers: examples of what I use in class",
         "contact.title":"Contact",
         "contact.body":"Prefer LinkedIn? Reach me there.",
         "contact.privacy":"Email is obfuscated to reduce scraping."
       },
       it: {
-        "nav.about":"Chi sono","nav.services":"Servizi","nav.projects":"Progetti","nav.contact":"Contatti",
-        "hero.subtitle":"DOCENTE DI INFORMATICA · BERGAMO, IT",
-        "cta.linkedin":"→ Contattami su LinkedIn","cta.linkedin.short":"LinkedIn","cta.github":"GitHub","cta.repo":"Repository","cta.email":"Email",
+        "nav.about":"Chi sono","nav.services":"Servizi","nav.projects":"Progetti","nav.mentors":"Mentors","nav.contact":"Contatti",
+        "hero.subtitle":"DOCENTE & CONSULENTE DI INFORMATICA, BERGAMO, IT",
+        "cta.linkedin":"→ Contattami su LinkedIn","cta.linkedin.short":"LinkedIn","cta.github":"Vedi il codice su GitHub →","cta.email":"Email",
         "about.title":"Chi sono",
         "about.body":"Docente di informatica e consulente. Progetto formazione che unisce scuola e impresa, mentoring per docenti, aspiranti docenti e aspiranti informatici, scouting tecnico.",
         "services.title":"Cosa faccio",
-        "services.training.title":"🎓 Formazione ICT & Curriculum Design",
-        "services.training.body":"AI, Web, IoT, Software Architecture Laboratori pratici e materiali didattici.",
+        "services.training.title":"🎓 Formazione, Progettazione e Coordinamento corsi post diploma ad alto valore aggiunto",
+        "services.training.body":"AI, IoT, Software Engineering. Solida impostazione tecnica di base. Stretta connessione con i bisogni aziendali.",
         "services.recruiting.title":"💼 Recruiting Tecnico",
-        "services.recruiting.body":"Talent scouting per aziende IT: job profile e short list mirate.",
+        "services.recruiting.body":"Talent scouting: job profile e short list mirate.",
         "services.mentoring.title":"🧭 Mentoring",
         "services.mentoring.body":"Supporto a docenti e studenti: percorsi, progetti, tesi e inserimento nel lavoro.",
-        "projects.title":"Progetti in evidenza",
-        "projects.socket.title":"Socket Server (C#)",
-        "projects.socket.body":"Esercitazione TCP socket con comandi JSON e container Docker.",
-        "projects.rest.title":"Esempi REST Client",
-        "projects.rest.body":"Esempi C# e JS per CRUD su JSONPlaceholder, con slide e materiali.",
+        "projects.title":"$ ls ./lab",
+        "projects.body1":"→ materiale didattico ed esercitazioni, aggiornato di continuo",
+        "projects.body2":"→ socket, REST API, container: esempi di quello che uso in aula",
         "contact.title":"Contatti",
         "contact.body":"Preferisci LinkedIn? Scrivimi lì.",
         "contact.privacy":"L'email è offuscata per ridurre lo scraping."
@@ -174,7 +162,8 @@ code,pre,kbd,samp{ font-family: var(--wp--preset--font-family--system-font, ui-m
     // Initial language: saved, or browser-based
     var init = "en";
     try {
-      init = localStorage.getItem("ol_lang") || (navigator.language || "en").toLowerCase().startsWith("it") ? "it" : "en";
+      var saved = localStorage.getItem("ol_lang");
+      init = saved || ((navigator.language || "en").toLowerCase().startsWith("it") ? "it" : "en");
     } catch(e){ init = "en"; }
     applyLang(init);
 
