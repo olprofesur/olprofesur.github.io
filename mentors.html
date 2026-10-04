@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>./olprofesur — Mentors</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <style>
 :root{ --ol-accent:#00d1b2 }
 body{ background:#000; color:#fff; margin:0; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace }
@@ -44,8 +45,8 @@ code,pre,kbd,samp{ font-family:inherit }
       <a href="/#about"><code data-i18n="nav.about">About</code></a>
       <a href="/#services"><code data-i18n="nav.services">Services</code></a>
       <a href="/#projects"><code data-i18n="nav.projects">Projects</code></a>
-      <a href="/mentors.html" aria-current="page"><code data-i18n="nav.mentors">Mentors</code></a>
       <a href="/#contact"><code data-i18n="nav.contact">Contact</code></a>
+      <a href="/mentors.html" aria-current="page"><code data-i18n="nav.mentors">Mentors</code></a>
       <button id="lang-it" aria-label="Italiano"><code>--lang=it</code></button>
       <button id="lang-en" aria-label="English"><code>--lang=en</code></button>
       <button id="email-btn" class="small" title="Email" aria-label="Email"><code data-i18n="cta.email">Email</code></button>
@@ -62,30 +63,30 @@ code,pre,kbd,samp{ font-family:inherit }
       <div class="grid">
         <div class="card">
           <h3><code>Giuseppe Arici</code></h3>
-          <p>The teacher that gave me some of my first insights on "self-meditation" topics (and not only).</p>
+          <p data-i18n="mentors.arici">The teacher that gave me some of my first insights on "self-meditation" topics (and not only).</p>
         </div>
         <div class="card">
           <h3><code>PierGiuseppe Cuminetti</code></h3>
-          <p>The teacher that influenced me on several key teaching methods (and not only).</p>
+          <p data-i18n="mentors.cuminetti">The teacher that influenced me on several key teaching methods (and not only).</p>
         </div>
         <div class="card">
           <h3><code>Antonella Gualteroni</code></h3>
-          <p>The teacher who gave me the basic imprinting on Informatics... and clearly saw my aptitude for teaching.</p>
+          <p data-i18n="mentors.gualteroni">The teacher who gave me the basic imprinting on Informatics... and clearly saw my aptitude for teaching.</p>
         </div>
         <div class="card">
           <h3><code>Alessandro Magri</code></h3>
-          <p>Every day he demonstrated the importance of doing our job properly.</p>
+          <p data-i18n="mentors.magri">Every day he demonstrated the importance of doing our job properly.</p>
         </div>
         <div class="card">
           <h3><code>Francesco Tisato</code></h3>
-          <p>My true mentor on several key technical matters: software analysis, design, OOP, writing papers, and more.</p>
+          <p data-i18n="mentors.tisato">My true mentor on several key technical matters: software analysis, design, OOP, writing papers, and more.</p>
         </div>
       </div>
       <p style="margin-top:2rem"><a class="cta" href="/"><code data-i18n="mentors.back">← Back home</code></a></p>
     </section>
   </main>
 
-  <footer class="footer"><code>© 2025 Olprofesur — Diego Bernini</code></footer>
+  <footer class="footer"><code>© <span id="year">2025</span> Olprofesur — Diego Bernini</code></footer>
 
   <!-- i18n + email obfuscation script (shared with index.html) -->
   <script>
@@ -95,13 +96,23 @@ code,pre,kbd,samp{ font-family:inherit }
         "nav.about":"About","nav.services":"Services","nav.projects":"Projects","nav.mentors":"Mentors","nav.contact":"Contact",
         "cta.email":"Email",
         "mentors.subtitle":"PEOPLE WHO LEFT THEIR MARK ON ME",
-        "mentors.back":"← Back home"
+        "mentors.back":"← Back home",
+        "mentors.arici":"The teacher that gave me some of my first insights on \"self-meditation\" topics (and not only).",
+        "mentors.cuminetti":"The teacher that influenced me on several key teaching methods (and not only).",
+        "mentors.gualteroni":"The teacher who gave me the basic imprinting on Informatics... and clearly saw my aptitude for teaching.",
+        "mentors.magri":"Every day he demonstrated the importance of doing our job properly.",
+        "mentors.tisato":"My true mentor on several key technical matters: software analysis, design, OOP, writing papers, and more."
       },
       it: {
         "nav.about":"Chi sono","nav.services":"Servizi","nav.projects":"Progetti","nav.mentors":"Mentors","nav.contact":"Contatti",
         "cta.email":"Email",
         "mentors.subtitle":"LE PERSONE CHE MI HANNO LASCIATO UN SEGNO",
-        "mentors.back":"← Torna alla home"
+        "mentors.back":"← Torna alla home",
+        "mentors.arici":"L'insegnante che mi ha dato i primi spunti sui temi dell'\"auto-meditazione\" (e non solo).",
+        "mentors.cuminetti":"L'insegnante che ha influenzato diversi miei metodi didattici fondamentali (e non solo).",
+        "mentors.gualteroni":"L'insegnante che mi ha dato l'imprinting di base sull'Informatica... e ha visto chiaramente la mia attitudine all'insegnamento.",
+        "mentors.magri":"Ogni giorno ha dimostrato l'importanza di fare bene il proprio lavoro.",
+        "mentors.tisato":"Il mio vero mentore su molti temi tecnici chiave: analisi software, progettazione, OOP, scrittura di articoli e altro."
       }
     };
 
@@ -121,6 +132,8 @@ code,pre,kbd,samp{ font-family:inherit }
       init = saved || ((navigator.language || "en").toLowerCase().startsWith("it") ? "it" : "en");
     } catch(e){ init = "en"; }
     applyLang(init);
+
+    document.getElementById("year").textContent = new Date().getFullYear();
 
     document.getElementById("lang-it").addEventListener("click", function(){ applyLang("it"); });
     document.getElementById("lang-en").addEventListener("click", function(){ applyLang("en"); });
