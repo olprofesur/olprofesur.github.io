@@ -27,7 +27,6 @@ body{ background:#000; color:#fff; margin:0; font-family:ui-monospace, SFMono-Re
 .card h3{ font-size:1.1rem; margin:.25rem 0 .5rem }
 .card p, .card li{ opacity:.85 }
 .card ul{ padding-left:1.1rem; margin:.5rem 0 }
-.price{ color:var(--ol-accent); font-size:1.4rem; font-weight:bold }
 .cta{ display:inline-block; margin:.5rem .5rem 0 0; padding:.75rem 1rem; border:1px solid var(--ol-accent); color:var(--ol-accent); border-radius:12px; text-decoration:none; background:none; font-family:inherit; font-size:1rem; cursor:pointer }
 .cta:hover{ background:rgba(0,209,178,.08) }
 .tags{ display:flex; flex-wrap:wrap; gap:.5rem; padding:0; list-style:none }
@@ -59,8 +58,8 @@ a{ color:var(--ol-accent) }
       "@type": "OfferCatalog",
       "name": "Lezioni private",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ripetizioni di informatica per scuole superiori" }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": "30", "priceCurrency": "EUR", "unitText": "ora" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preparazione esami universitari di informatica" }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": "40", "priceCurrency": "EUR", "unitText": "ora" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ripetizioni di informatica per scuole superiori" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preparazione esami universitari di informatica" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preparazione al concorso docenti" } }
       ]
     }
@@ -83,7 +82,6 @@ a{ color:var(--ol-accent) }
       <a href="/"><code>./olprofesur</code></a>
       <a href="#servizi"><code>Servizi</code></a>
       <a href="#materie"><code>Materie</code></a>
-      <a href="#tariffe"><code>Tariffe</code></a>
       <a href="#recensioni"><code>Recensioni</code></a>
       <a href="/ripetizioni.html" aria-current="page"><code>Ripetizioni</code></a>
       <button class="small email-btn" data-subject="Richiesta informazioni ripetizioni"><code>Email</code></button>
@@ -150,24 +148,6 @@ a{ color:var(--ol-accent) }
       </div>
     </section>
 
-    <section class="section" id="tariffe">
-      <h2>Tariffe</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Scuole superiori</h3>
-          <p class="price">30 €/h</p>
-        </div>
-        <div class="card">
-          <h3>Università</h3>
-          <p class="price">40 €/h</p>
-        </div>
-        <div class="card">
-          <h3>Coppie e concorso docenti</h3>
-          <p class="price">su richiesta</p>
-          <p><button class="cta email-btn" data-subject="Pacchetti coppie / concorso docenti">→ Chiedi i dettagli</button></p>
-        </div>
-      </div>
-    </section>
 
     <section class="section" id="recensioni">
       <h2>Dicono di me</h2>
