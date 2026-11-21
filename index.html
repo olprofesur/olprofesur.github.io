@@ -1,32 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>./olprofesur — Informatics Teacher & ICT Consultant (Bergamo)</title>
+  <title>Diego Bernini (Ol Profesur) — Formatore e consulente IT & AI per aziende, ITS e Università | Bergamo</title>
+  <meta name="description" content="Diego Bernini, docente di informatica e PhD a Bergamo. Formazione e consulenza IT & AI per aziende, enti, ITS Academy, IFTS e università; formazione docenti; technical recruiting IT; lezioni private di informatica." />
+  <link rel="canonical" href="https://olprofesur.bg/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Diego Bernini (Ol Profesur) — Formatore e consulente IT & AI" />
+  <meta property="og:description" content="Creo ponti tra formazione informatica e lavoro: formazione e consulenza per aziende, ITS e università, formazione docenti, technical recruiting IT." />
+  <meta property="og:url" content="https://olprofesur.bg/" />
+  <meta property="og:locale" content="it_IT" />
   <style>
-/* Minimal additions on top of existing theme (preserving your font/style) */
 :root{ --ol-accent:#00d1b2 }
-body{ background:#000; color:#fff }
-.hero{ padding:clamp(3rem,8vw,8rem) 1.25rem 2rem; text-align:center }
+html{ scroll-behavior:smooth; scroll-padding-top:4.5rem }
+body{ background:#000; color:#fff; margin:0; line-height:1.5 }
+code,pre,kbd,samp,body{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace }
+.hero{ padding:clamp(3rem,8vw,7rem) 1.25rem 2rem; text-align:center }
+.hero h1{ margin:0 }
 .hero h1 code{ display:inline-block; font-size:clamp(2.5rem,8vw,7rem); line-height:1 }
-.hero p code{ display:inline-block; font-size:clamp(1rem,4vw,2rem); line-height:1.15 }
+.hero .name{ font-size:clamp(1.2rem,3.5vw,1.8rem); margin:1rem 0 .25rem; font-weight:bold }
+.hero .motto{ font-size:clamp(1rem,3vw,1.4rem); color:var(--ol-accent); margin:.25rem 0 1rem }
+.hero .roles{ font-size:clamp(.95rem,2.4vw,1.15rem); opacity:.9; max-width:56rem; margin:0 auto }
 .section{ padding:clamp(2rem,6vw,4rem) 1.25rem; max-width:1100px; margin:0 auto; border-top:1px solid rgba(255,255,255,.08) }
-.section h2 code{ font-size:clamp(1.25rem,3vw,1.75rem) }
+.section h2{ font-size:clamp(1.25rem,3vw,1.75rem); margin-top:0 }
+.section > p{ max-width:60rem; opacity:.92 }
 .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.25rem }
-.card{ background:#0b0b0b; border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:1rem }
-.card h3 code{ font-size:1.1rem }
-.cta{ display:inline-block; margin-top:1rem; padding:.75rem 1rem; border:1px solid var(--ol-accent); color:var(--ol-accent); border-radius:12px; text-decoration:none }
-.nav{ position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(0,0,0,.6); border-bottom:1px solid rgba(255,255,255,.06) }
+.card{ background:#0b0b0b; border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:1rem 1.1rem; display:flex; flex-direction:column }
+.card h3{ font-size:1.1rem; margin:.25rem 0 .5rem }
+.card p{ opacity:.85; margin:.25rem 0 }
+.card .cta{ margin-top:auto; align-self:flex-start }
+.stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.25rem }
+.stat{ border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:1rem 1.1rem }
+.stat strong{ display:block; font-size:1.6rem; color:var(--ol-accent) }
+.stat span{ opacity:.85 }
+.cta{ display:inline-block; margin:.75rem .5rem 0 0; padding:.75rem 1rem; border:1px solid var(--ol-accent); color:var(--ol-accent); border-radius:12px; text-decoration:none; background:none; font-family:inherit; font-size:1rem; cursor:pointer }
+.cta:hover{ background:rgba(0,209,178,.08) }
+.nav{ position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(0,0,0,.6); border-bottom:1px solid rgba(255,255,255,.06); z-index:10 }
 .nav-inner{ display:flex; gap:.75rem; align-items:center; justify-content:center; padding:.5rem 1rem; flex-wrap:wrap }
-.nav a, .nav button{ color:#fff; text-decoration:none; opacity:.9; background:none; border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:.35rem .6rem; cursor:pointer }
+.nav a, .nav button{ color:#fff; text-decoration:none; opacity:.9; background:none; border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:.35rem .6rem; cursor:pointer; font-family:inherit; font-size:.95rem }
 .nav a:hover, .nav button:hover{ opacity:1 }
 .footer{ padding:2rem 1.25rem; text-align:center; opacity:.75 }
-code,pre,kbd,samp{ font-family: var(--wp--preset--font-family--system-font, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace) }
 .small{ opacity:.8; font-size:.9rem }
-html{ scroll-behavior:smooth; scroll-padding-top:4.5rem }
+a{ color:var(--ol-accent) }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Diego Bernini",
+    "alternateName": "Ol Profesur",
+    "url": "https://olprofesur.bg/",
+    "jobTitle": "Formatore e consulente IT & AI, docente di informatica, technical recruiter IT",
+    "description": "Docente di informatica e PhD. Formazione e consulenza IT & AI per aziende, ITS Academy, IFTS e università; formazione docenti; technical recruiting IT.",
+    "knowsAbout": ["Intelligenza artificiale", "Formazione ITS e IFTS", "Progettazione formativa", "Internet of Things", "Ingegneria del software", "Programmazione", "Technical recruiting", "Didattica dell'informatica"],
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Dottorato di ricerca in Informatica" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Bergamo", "addressRegion": "BG", "addressCountry": "IT" },
+    "sameAs": ["https://www.linkedin.com/in/diegobernini", "https://github.com/olprofesur"]
+  }
+  </script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-76KFHEPWBQ"></script>
@@ -42,163 +76,157 @@ html{ scroll-behavior:smooth; scroll-padding-top:4.5rem }
   <div class="nav">
     <div class="nav-inner">
       <a href="#home"><code>./olprofesur</code></a>
-      <a href="#about"><code data-i18n="nav.about">About</code></a>
-      <a href="#services"><code data-i18n="nav.services">Services</code></a>
-      <a href="#projects"><code data-i18n="nav.projects">Projects</code></a>
-      <a href="#contact"><code data-i18n="nav.contact">Contact</code></a>
-      <a href="/formazione.html"><code data-i18n="nav.training">Formazione</code></a>
+      <a href="#about"><code data-i18n="nav.about">Chi sono</code></a>
+      <a href="#services"><code data-i18n="nav.services">Servizi</code></a>
+      <a href="/formazione.html"><code data-i18n="nav.training">Formazione ITS/IFTS</code></a>
       <a href="/ripetizioni.html"><code data-i18n="nav.tutoring">Lezioni private</code></a>
       <a href="/mentors.html"><code data-i18n="nav.mentors">Mentors</code></a>
+      <a href="#contact"><code data-i18n="nav.contact">Contatti</code></a>
       <button id="lang-it" aria-label="Italiano"><code>--lang=it</code></button>
       <button id="lang-en" aria-label="English"><code>--lang=en</code></button>
-      <button id="email-btn" class="small" title="Email" aria-label="Email"><code data-i18n="cta.email">Email</code></button>
     </div>
   </div>
 
   <header id="home" class="hero">
     <h1><code>./olprofesur</code></h1>
-    <p><code data-i18n="hero.subtitle">INFORMATICS TEACHER & CONSULTANT, BERGAMO, IT</code></p>
-    <p><a class="cta" href="https://www.linkedin.com/in/diegobernini" target="_blank" rel="noopener"><code data-i18n="cta.linkedin">→ Connect on LinkedIn</code></a></p>
+    <p class="name">Diego Bernini</p>
+    <p class="motto"><span data-i18n="hero.motto">🤝 Creo ponti tra formazione informatica e lavoro</span></p>
+    <p class="roles"><span data-i18n="hero.roles">Formatore e consulente IT &amp; AI per aziende, ITS e Università · Docente di Informatica e PhD · Technical Recruiter IT · Bergamo</span></p>
+    <p>
+      <button class="cta email-btn" data-subject="Contatto dal sito olprofesur"><span data-i18n="cta.email">→ Scrivimi</span></button>
+      <a class="cta" href="https://www.linkedin.com/in/diegobernini" target="_blank" rel="noopener"><span data-i18n="cta.linkedin">→ LinkedIn</span></a>
+    </p>
   </header>
 
   <main>
     <section class="section" id="about">
-      <h2><code data-i18n="about.title">About</code></h2>
-      <p><code data-i18n="about.body">Docente di informatica e consulente. Progetto formazione che unisce scuola e impresa, mentoring per docenti, aspiranti docenti e studenti, scouting tecnico.</code></p>
+      <h2 data-i18n="about.title">Chi sono</h2>
+      <p data-i18n="about.body1">Sono docente di ruolo di informatica e referente dell'indirizzo informatico in un istituto tecnico di Bergamo, lo stesso in cui mi sono diplomato. Ho un dottorato di ricerca in informatica (architetture software, Internet of Things, smart environments) e ho lavorato come sviluppatore in azienda e da freelance.</p>
+      <p data-i18n="about.body2">Da anni progetto e coordino percorsi post diploma nell'area IT, formo docenti e futuri docenti di informatica, tengo corsi su misura per aziende ed enti e seleziono profili tecnici per le aziende IT. Il filo conduttore è uno: collegare quello che si impara in aula con quello che serve davvero nel lavoro.</p>
+    </section>
+
+    <section class="section" id="numbers">
+      <h2 data-i18n="numbers.title">In breve</h2>
+      <div class="stats">
+        <div class="stat"><strong>2018</strong><span data-i18n="numbers.its">dal 2018 nei percorsi ITS dell'area IT, oltre 40 moduli formativi coordinati</span></div>
+        <div class="stat"><strong>&gt;90%</strong><span data-i18n="numbers.placement">occupabilità dei diplomati nei percorsi ITS seguiti</span></div>
+        <div class="stat"><strong>PhD</strong><span data-i18n="numbers.phd">dottorato di ricerca in informatica, IoT e architetture software</span></div>
+        <div class="stat"><strong>A041</strong><span data-i18n="numbers.a041">docente nei percorsi universitari di abilitazione all'insegnamento dell'informatica</span></div>
+      </div>
     </section>
 
     <section class="section" id="services">
-      <h2><code data-i18n="services.title">What I do</code></h2>
+      <h2 data-i18n="services.title">Cosa faccio</h2>
       <div class="grid">
         <div class="card">
-          <h3><code data-i18n="services.training.title">🎓 Formazione per ITS, IFTS, enti e aziende</code></h3>
-          <p><code data-i18n="services.training.body">Docenza, tutoraggio e progettazione su AI, IoT, Software Engineering. Solida impostazione tecnica, stretta connessione con i bisogni aziendali.</code></p>
-          <p><a class="cta" href="/formazione.html"><code data-i18n="services.training.cta">→ Scopri di più</code></a></p>
+          <h3 data-i18n="services.its.title">🏛️ Consulenza, coordinamento e docenza per ITS e IFTS</h3>
+          <p data-i18n="services.its.body">Progettazione dei percorsi, coordinamento di docenti e moduli, raccordo con le aziende per stage e placement, docenza e tutoraggio nell'area IT.</p>
+          <a class="cta" href="/formazione.html"><span data-i18n="cta.more">→ Scopri di più</span></a>
         </div>
         <div class="card">
-          <h3><code data-i18n="services.recruiting.title">💼 Technical Scouting</code></h3>
-          <p><code data-i18n="services.recruiting.body">Talent scouting per aziende IT: job profile, test tecnici, short list mirate.</code></p>
+          <h3 data-i18n="services.corporate.title">🏢 Formazione IT &amp; AI per aziende ed enti</h3>
+          <p data-i18n="services.corporate.body">Corsi su misura, in presenza o da remoto: intelligenza artificiale applicata, programmazione (Python, C#, Java), architetture software, cloud e Docker, IoT.</p>
+          <a class="cta" href="/formazione.html#per-chi"><span data-i18n="cta.more">→ Scopri di più</span></a>
         </div>
         <div class="card">
-          <h3><code data-i18n="services.mentoring.title">🧭 Mentoring</code></h3>
-          <p><code data-i18n="services.mentoring.body">Supporto a docenti e studenti: percorsi, progetti, tesi e inserimento nel mondo lavoro.</code></p>
+          <h3 data-i18n="services.teachers.title">🎓 Formazione docenti e università</h3>
+          <p data-i18n="services.teachers.body">Progettazione didattica in informatica e strumenti di IA per l'insegnamento; docenza e tutoraggio in corsi universitari e percorsi di abilitazione.</p>
+          <a class="cta" href="/formazione.html#servizi"><span data-i18n="cta.more">→ Scopri di più</span></a>
         </div>
         <div class="card">
-          <h3><code data-i18n="services.tutoring.title">📚 Lezioni private di Informatica</code></h3>
-          <p><code data-i18n="services.tutoring.body">Superiori, esami universitari e concorso docenti. Online o in presenza a Bergamo.</code></p>
-          <p><a class="cta" href="/ripetizioni.html"><code data-i18n="services.tutoring.cta">→ Scopri di più</code></a></p>
+          <h3 data-i18n="services.recruiting.title">💼 Technical Recruiting IT</h3>
+          <p data-i18n="services.recruiting.body">Ricerca e selezione di profili IT specializzati (sviluppo software, embedded, IoT, DevOps): definizione del profilo, screening tecnico, short list mirate.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="services.mentoring.title">🧭 Mentoring</h3>
+          <p data-i18n="services.mentoring.body">Accompagnamento di docenti, aspiranti docenti e studenti: percorsi, progetti, tesi e ingresso nel mondo del lavoro IT.</p>
+          <a class="cta" href="/mentors.html"><span data-i18n="cta.mentors">→ Mentors</span></a>
+        </div>
+        <div class="card">
+          <h3 data-i18n="services.tutoring.title">📚 Lezioni private di informatica</h3>
+          <p data-i18n="services.tutoring.body">Scuole superiori, esami universitari e concorso docenti. Online o in presenza a Bergamo.</p>
+          <a class="cta" href="/ripetizioni.html"><span data-i18n="cta.more">→ Scopri di più</span></a>
         </div>
       </div>
     </section>
 
     <section class="section" id="projects">
-      <h2><code data-i18n="projects.title">$ ls ./lab</code></h2>
-      <p><code data-i18n="projects.body1">→ materiale didattico ed esercitazioni, aggiornato di continuo</code></p>
-      <p><code data-i18n="projects.body2">→ socket, REST API, container: esempi di quello che uso in aula</code></p>
-      <p><a class="cta" href="https://github.com/olprofesur" target="_blank" rel="noopener"><code data-i18n="cta.github">Vedi il codice su GitHub →</code></a></p>
+      <h2><code>$ ls ./lab</code></h2>
+      <p data-i18n="projects.body1">→ materiale didattico ed esercitazioni, aggiornato di continuo</p>
+      <p data-i18n="projects.body2">→ socket, REST API, container, IoT: esempi di quello che uso in aula</p>
+      <p><a class="cta" href="https://github.com/olprofesur" target="_blank" rel="noopener"><span data-i18n="cta.github">Vedi il codice su GitHub →</span></a></p>
     </section>
 
     <section class="section" id="contact">
-      <h2><code data-i18n="contact.title">Contacts</code></h2>
-      <p><code data-i18n="contact.body">Preferisci LinkedIn? Scrivimi lì.</code></p>
+      <h2 data-i18n="contact.title">Contatti</h2>
+      <p data-i18n="contact.body">Per collaborazioni, corsi, consulenze o ricerche di personale scrivimi una email con due righe sul contesto: ti rispondo con disponibilità e proposta. Collaboro con partita IVA, in Lombardia in presenza e ovunque da remoto.</p>
       <p>
-        <a class="cta" href="https://www.linkedin.com/in/diegobernini" target="_blank" rel="noopener"><code data-i18n="cta.linkedin.short">LinkedIn</code></a>
-        <a class="cta" href="/mentors.html"><code>Mentors</code></a>
+        <button class="cta email-btn" data-subject="Contatto dal sito olprofesur"><span data-i18n="cta.email">→ Scrivimi</span></button>
+        <a class="cta" href="https://www.linkedin.com/in/diegobernini" target="_blank" rel="noopener"><span data-i18n="cta.linkedin">→ LinkedIn</span></a>
       </p>
     </section>
   </main>
 
-  <footer class="footer"><code>© <span id="year">2025</span> Olprofesur — Diego Bernini</code></footer>
+  <footer class="footer"><code>© <span id="year">2026</span> Olprofesur — Diego Bernini · Bergamo</code></footer>
 
-  <!-- i18n + email obfuscation script -->
   <script>
   (function(){
-    // --- Translations ---
-    const t = {
+    var t = {
       en: {
-        "nav.about":"About","nav.services":"Services","nav.projects":"Projects","nav.mentors":"Mentors","nav.contact":"Contact","nav.training":"Training","nav.tutoring":"Private lessons",
-        "hero.subtitle":"INFORMATICS TEACHER & CONSULTANT, BERGAMO, IT",
-        "cta.linkedin":"→ Connect on LinkedIn","cta.linkedin.short":"LinkedIn","cta.github":"See the code on GitHub →","cta.email":"Email",
+        "nav.about":"About","nav.services":"Services","nav.training":"ITS/IFTS training","nav.tutoring":"Private lessons","nav.mentors":"Mentors","nav.contact":"Contact",
+        "hero.motto":"🤝 Building bridges between IT education and work",
+        "hero.roles":"IT & AI trainer and consultant for companies, ITS Academies and universities · Computer Science teacher and PhD · IT Technical Recruiter · Bergamo, Italy",
+        "cta.email":"→ Email me","cta.linkedin":"→ LinkedIn","cta.more":"→ Learn more","cta.mentors":"→ Mentors","cta.github":"See the code on GitHub →",
         "about.title":"About",
-        "about.body":"Informatics teacher and consultant. I design training bridging school and industry, mentor teachers & developers, technical scouting.",
+        "about.body1":"I am a tenured Computer Science teacher and head of the IT track at a technical high school in Bergamo, the same school I graduated from. I hold a PhD in Computer Science (software architectures, Internet of Things, smart environments) and worked as a software developer in industry and as a freelancer.",
+        "about.body2":"For years I have designed and coordinated post-secondary IT programmes, trained current and future CS teachers, delivered tailored courses for companies and institutions, and recruited technical profiles for IT companies. The common thread: connecting what is learned in class with what really matters at work.",
+        "numbers.title":"At a glance",
+        "numbers.its":"in ITS Academy IT programmes since 2018, over 40 training modules coordinated",
+        "numbers.placement":"graduate employability in the ITS programmes I followed",
+        "numbers.phd":"PhD in Computer Science, IoT and software architectures",
+        "numbers.a041":"lecturer in university teacher-qualification programmes for Computer Science",
         "services.title":"What I do",
-        "services.training.title":"🎓 Training for ITS Academies, IFTS courses, institutions and companies",
-        "services.training.body":"Teaching, tutoring and course design on AI, IoT, Software Engineering. Solid technical foundations, close alignment with business needs.",
-        "services.training.cta":"→ Learn more",
-        "services.recruiting.title":"💼 Technical Scouting",
-        "services.recruiting.body":"Talent scouting: job profiles, technical tests, focused shortlists.",
+        "services.its.title":"🏛️ Consulting, coordination and teaching for ITS and IFTS programmes",
+        "services.its.body":"Programme design, coordination of teachers and modules, company relations for internships and placement, teaching and tutoring in the IT area.",
+        "services.corporate.title":"🏢 IT & AI training for companies and institutions",
+        "services.corporate.body":"Tailored courses, on site or remote: applied AI, programming (Python, C#, Java), software architecture, cloud and Docker, IoT.",
+        "services.teachers.title":"🎓 Teacher training and universities",
+        "services.teachers.body":"Instructional design for Computer Science and AI tools for teaching; teaching and tutoring in university courses and teacher-qualification programmes.",
+        "services.recruiting.title":"💼 IT Technical Recruiting",
+        "services.recruiting.body":"Search and selection of specialised IT profiles (software development, embedded, IoT, DevOps): role definition, technical screening, focused shortlists.",
         "services.mentoring.title":"🧭 Mentoring",
-        "services.mentoring.body":"Support for teachers and students: learning paths, projects, job placement.",
-        "services.tutoring.title":"📚 Private Computer Science Lessons",
-        "services.tutoring.body":"High school, university exams and teacher recruitment exam (in Italian). Online or in person in Bergamo.",
-        "services.tutoring.cta":"→ Learn more",
-        "projects.title":"$ ls ./lab",
+        "services.mentoring.body":"Guidance for teachers, aspiring teachers and students: learning paths, projects, theses and entering the IT job market.",
+        "services.tutoring.title":"📚 Private Computer Science lessons",
+        "services.tutoring.body":"High school, university exams and the Italian teacher recruitment exam. Online or in person in Bergamo.",
         "projects.body1":"→ teaching materials and exercises, updated continuously",
-        "projects.body2":"→ sockets, REST APIs, containers: examples of what I use in class",
+        "projects.body2":"→ sockets, REST APIs, containers, IoT: examples of what I use in class",
         "contact.title":"Contact",
-        "contact.body":"Prefer LinkedIn? Reach me there.",
-        "contact.privacy":"Email is obfuscated to reduce scraping."
-      },
-      it: {
-        "nav.about":"Chi sono","nav.services":"Servizi","nav.projects":"Progetti","nav.mentors":"Mentors","nav.contact":"Contatti","nav.training":"Formazione","nav.tutoring":"Lezioni private",
-        "hero.subtitle":"DOCENTE & CONSULENTE DI INFORMATICA, BERGAMO, IT",
-        "cta.linkedin":"→ Contattami su LinkedIn","cta.linkedin.short":"LinkedIn","cta.github":"Vedi il codice su GitHub →","cta.email":"Email",
-        "about.title":"Chi sono",
-        "about.body":"Docente di informatica e consulente. Progetto formazione che unisce scuola e impresa, mentoring per docenti, aspiranti docenti e aspiranti informatici, scouting tecnico.",
-        "services.title":"Cosa faccio",
-        "services.training.title":"🎓 Formazione per ITS, IFTS, enti e aziende",
-        "services.training.body":"Docenza, tutoraggio e progettazione su AI, IoT, Software Engineering. Solida impostazione tecnica, stretta connessione con i bisogni aziendali.",
-        "services.training.cta":"→ Scopri di più",
-        "services.recruiting.title":"💼 Recruiting Tecnico",
-        "services.recruiting.body":"Talent scouting: job profile e short list mirate.",
-        "services.mentoring.title":"🧭 Mentoring",
-        "services.mentoring.body":"Supporto a docenti e studenti: percorsi, progetti, tesi e inserimento nel lavoro.",
-        "services.tutoring.title":"📚 Lezioni private di Informatica",
-        "services.tutoring.body":"Superiori, esami universitari e concorso docenti. Online o in presenza a Bergamo.",
-        "services.tutoring.cta":"→ Scopri di più",
-        "projects.title":"$ ls ./lab",
-        "projects.body1":"→ materiale didattico ed esercitazioni, aggiornato di continuo",
-        "projects.body2":"→ socket, REST API, container: esempi di quello che uso in aula",
-        "contact.title":"Contatti",
-        "contact.body":"Preferisci LinkedIn? Scrivimi lì.",
-        "contact.privacy":"L'email è offuscata per ridurre lo scraping."
+        "contact.body":"For collaborations, courses, consulting or recruiting, email me a couple of lines about your context and I will reply with availability and a proposal. I work as a freelancer, on site in Lombardy and remotely anywhere."
       }
     };
-
+    var it = {};
+    document.querySelectorAll("[data-i18n]").forEach(function(el){ it[el.getAttribute("data-i18n")] = el.textContent; });
+    t.it = it;
     function applyLang(lang){
       document.documentElement.lang = lang;
       document.querySelectorAll("[data-i18n]").forEach(function(el){
-        var key = el.getAttribute("data-i18n");
-        var txt = (t[lang] && t[lang][key]) ? t[lang][key] : el.textContent;
-        el.textContent = txt;
+        var k = el.getAttribute("data-i18n");
+        if (t[lang] && t[lang][k]) el.textContent = t[lang][k];
       });
       try { localStorage.setItem("ol_lang", lang); } catch(e){}
     }
-
-    // Initial language: saved, or browser-based
-    var init = "en";
-    try {
-      var saved = localStorage.getItem("ol_lang");
-      init = saved || ((navigator.language || "en").toLowerCase().startsWith("it") ? "it" : "en");
-    } catch(e){ init = "en"; }
-    applyLang(init);
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Switch handlers
+    // Italian by default (also for search engines); English only if chosen
+    try { if (localStorage.getItem("ol_lang") === "en") applyLang("en"); } catch(e){}
     document.getElementById("lang-it").addEventListener("click", function(){ applyLang("it"); });
     document.getElementById("lang-en").addEventListener("click", function(){ applyLang("en"); });
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-    // --- Email obfuscation ---
-    var HEX_EMAIL = "6F6C70726F666573757240676D61696C2E636F6D"; // <-- put your hex here, e.g. "636f6e74616374406f6c70726f66657375722e6974"
-    var SUBJECT = "Hello from olprofesur site";
-    document.getElementById("email-btn").addEventListener("click", function(){
-      var email = "";
-      for (var i=0; i<HEX_EMAIL.length; i+=2){
-        email += String.fromCharCode(parseInt(HEX_EMAIL.substr(i,2),16));
-      }
-      var mailto = "mailto:" + email + "?subject=" + encodeURIComponent(SUBJECT);
-      window.location.href = mailto;
+    var HEX_EMAIL = "6F6C70726F666573757240676D61696C2E636F6D";
+    function decode(h){ var s=""; for (var i=0;i<h.length;i+=2){ s += String.fromCharCode(parseInt(h.substr(i,2),16)); } return s; }
+    document.querySelectorAll(".email-btn").forEach(function(b){
+      b.addEventListener("click", function(){
+        window.location.href = "mailto:" + decode(HEX_EMAIL) + "?subject=" + encodeURIComponent(b.getAttribute("data-subject") || "Contatto dal sito olprofesur");
+      });
     });
   })();
   </script>
